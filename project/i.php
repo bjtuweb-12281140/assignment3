@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>欢迎回来，<?php echo $username; ?> </title>
-	
+	<meta http-equiv="Content-Type" content="textml; charset=utf-8" />
 	<link href="page.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -23,11 +23,7 @@ $username = $_SESSION['username'];
 
 $user_query = mysql_query("select * from users where uid=$userid limit 1");
 $row = mysql_fetch_array($user_query);
-echo '用户信息：<br />';
-echo '用户ID：',$userid,'<br />';
-echo '用户名：',$username,'<br />';
-echo '邮箱：',$row<'email'>,'<br />';
-echo '注册日期：',date("Y-m-d", $row['regdate']),'<br />';
+
 echo '<a href="login.php?action=logout">注销</a> 登录<br />';
 ?>
 

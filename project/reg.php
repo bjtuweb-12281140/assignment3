@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>User registration</title>
-  
+  <meta http-equiv="Content-Type" content="textml; charset=utf-8" />
 </head>
 <body>
 

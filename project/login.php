@@ -7,7 +7,7 @@ if(!isset($_POST['submit'])){
 $username = htmlspecialchars($_POST['username']);
 $password = MD5($_POST['password']);
 
-//包含数据库连接文件
+
 include('conn.php');
 //检测用户名及密码是否正确
 $check_query = mysql_query("select uid from users where username='$username' and password='$password' limit 1");
